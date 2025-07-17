@@ -1,0 +1,125 @@
+:root{
+    --my-light-blue: #8e0000;
+    --my-darken-blue: #4b00e0;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    
+    min-height: 100%;
+    
+}
+
+.orange-color{
+    background-color: orange;
+    height: 4px;
+    width: 100%;
+}
+
+nav{
+
+    background-color: rgb(43, 43, 43);
+
+}
+
+.nav-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.links-holder a{
+    margin: 25px;
+    color: aliceblue;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+
+.logo-type{
+    color: aliceblue;
+    margin: 22px 25px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    gap: 25px;
+    margin: 10px auto;
+
+    
+
+}
+
+.card{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 25px 0px 45px 0px;
+
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.5s;
+    
+
+}
+.card h2{
+    margin: 5px 0px;
+}
+.card h3{
+    color: blue;
+}
+
+.card:hover{
+    scale: 1.03;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card img{
+    width: 180px;
+    height: 180px;
+
+}
+
+
+.card a{
+    
+    
+    background-color: var(--my-darken-blue);
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 45px;
+
+    transition: all 0.6s;
+}
+
+.card a:hover{
+    background-image: conic-gradient(at 50% 50%, var(--my-light-blue), var(--my-darken-blue), var(--my-light-blue));
+    rotate: 20deg;
+    border-radius: 10px;
+
+
+}
+
+footer{
+    background-color: rgb(43, 43, 43);
+    height: 150px;
+}
