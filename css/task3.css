@@ -28,6 +28,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -58,6 +59,8 @@ nav{
     width: 70%;
     gap: 25px;
     margin: 10px auto;
+    flex-wrap: wrap;
+
 
     
 

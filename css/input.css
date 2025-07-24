@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-holder{
+    position: relative;
+}
+
+
+
+.input-holder label{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+
+
+
+.input-holder input:focus ~ label,
+.input-holder input:not(:placeholder-shown) ~ label{
+    top: -12px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 15px;
+    padding: 0px 5px;
+
+}
+/* 
+
+.input-field input:focus ~ label,
+.input-field input:not(:placeholder-shown) ~ label {
+    top: -15%;
+    right: 10%;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    opacity: 1;
+    margin: 0 0px;
+}
+
+
+.input-field{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.input-field input{
+    max-width: 180px;
+    height: 40px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 19px;
+    color: var(--red-color);
+    text-align: right;
+}
+.input-field textarea{
+    width: 280px;
+    height: 150px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 19px;
+    color: var(--red-color);
+    text-align: right;
+    resize: none;
+}
+
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--red-color);
+    pointer-events: none;
+    transition: 0.3s;
+    opacity: 0.5;
+    margin: 0 10px;
+} */

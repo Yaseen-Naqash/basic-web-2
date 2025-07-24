@@ -6,11 +6,14 @@
 
 
 .my-grid-container{
+
     display: grid;
-
+    /* border: 2px solid red; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     justify-items: center;
+    /* justify-content: center; is related to flex box  */
     align-items: center;
 
     
@@ -26,7 +29,7 @@
 
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
-
+    grid-template-columns: repeat(auto-fit,minmax(210px ,1fr));
     justify-items: center;
     align-items: center;
 
@@ -34,7 +37,7 @@
 
     
 }
-
+/* 
 @media (max-width: 1130px) {
 
     .mygrid{
@@ -51,4 +54,12 @@
 
     }
     
+} */
+
+.mydiv{
+
+}
+
+.specialdiv{
+    background-color: blue;
 }

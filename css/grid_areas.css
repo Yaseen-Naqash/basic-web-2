@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: yellow;
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+header{
+    grid-area: banner;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+main{
+    grid-area: main;
+    background-color: tomato;
+    width: 100%;
+    height: 100vh;
+}
+
+.filters{
+    grid-area: filter;
+    background-color: cadetblue;
+    width: 100%;
+    height: 100%;
+
+}
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 400px 1fr auto;
+
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px; */
+    /* grid-template-areas:
+    "part1 part2 part3"
+    "part4 part5 part6"
+    "part7 part8 part9"; */
+    grid-template-areas: 
+    "nav nav"
+    "banner banner"
+    "filter main"
+    "footer footer"
+    ;
+    border: 3px solid red;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.vw-example{
+
+    margin: 150px 0px;
+    width: 50vh;
+    height: 200px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "banner"
+        "main"
+        "footer"
+    ;
+    }
+    .filters{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE TRICKS */
+/* 
+
+1- flex
+    display: flex;
+    flex-wrap: wrap;
+
+2- grid
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+
+3- media query
+
+    @media (max-width: 1130px) {
+
+        .mygrid{
+            grid-template-columns: 200px 200px 200px 200px;
+
+        }
+        
+    }
+
+    @media (max-width: 930px) {
+
+        .mygrid{
+            grid-template-columns: 200px 200px 200px;
+
+        }
+    } */
