@@ -1,0 +1,34 @@
+body{
+    overflow-x: hidden;
+}
+
+.myButton {
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: fit-content;
+    box-shadow: 2px 2px 2px 2px black;
+
+    position: absolute;
+    right: -200px;
+    top: 150px;
+    transition: all 1s;
+}
+
+.open{
+    right: 20px;
+
+}
+
+
+.myCustomButton{
+    margin: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: fit-content;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+}
