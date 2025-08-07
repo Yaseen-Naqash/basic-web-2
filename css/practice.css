@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #00041d;
+    --seccondary-color: #cc00ff;
+    --accent-color: #6610f2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* background-image: url(../assets/images/mikey-terra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+
+
+/* navigation */
+
+nav{
+    position: absolute;
+
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    border-radius: 75px;
+    margin: 50px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    margin: 0px 40px;
+    
+}
+
+.link-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 40px;
+    gap: 30px;
+    
+}
+
+.link-holder a{
+    text-decoration: none;
+    font-size: x-large;
+    border-radius: 30px;
+    padding: 12px 18px;
+    transition: all 0.2s;
+    
+}
+
+.nav-links{
+    color: black;
+}
+
+.home-link{
+    color: white;
+    background-color: var(--accent-color);
+
+}
+
+
+.nav-links:hover{
+    color: white;
+    background-color: var(--accent-color);
+
+}
+
+
+/* header */
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/2729.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+    
+}
+
+.texts{
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: x-large;
+}
+
+
+.call-to-actions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.transparent-button{
+
+}
+.purple-button{
+    position: relative;
+    background-color: #6610f2;
+    
+    padding: 20px 30px;
+    border-radius: 30px;
+    transition: all 0.4s;
+
+}
+
+.purple-button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.purple-button hr{
+
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
+    background-color: white;
+    height: 3px;
+    width: 80%;
+    transform: translate(-50%, 0%);
+}
+
+.purple-button:hover{
+    background-color: white;
+    
+}
+
+.purple-button:hover a{
+    color: black;
+}
+
+
+
+.transparent-button{
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 30px;
+    border-bottom: 2px solid white;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+.slider{
+    width: 30%;
+    height: 450px;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.slider-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    gap: 15px;
+}
+
+.left{
+    background-color: white;
+    color: var(--accent-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.right{
+    background-color: white;
+    color: var(--accent-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+.image-holder{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+
+}
+.image-holder img{
+
+    height: 100%;
+    
+    position: absolute;
+    transform: translate(-50%);
+    transition: all 1s;
+}
+
+.image1{
+    left: 50%;
+
+}
+
+.image2{
+    left: 900px;   
+}
+
+
