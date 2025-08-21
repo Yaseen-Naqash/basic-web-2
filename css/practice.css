@@ -223,13 +223,15 @@ header{
     transition: all 1s;
 }
 
-.image1{
+.image{
+    display: none;
+
+}
+
+.active{
+    display: block;
     left: 50%;
-
 }
 
-.image2{
-    left: 900px;   
-}
 
 
