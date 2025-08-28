@@ -1,0 +1,9 @@
+.user-holder{
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.user{
+    margin: 30px;
+}

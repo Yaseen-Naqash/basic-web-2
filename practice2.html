@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="css/practice2.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Your Dashboard</h1>
+      <button id="themeToggle">Switch Theme</button>
+    </header>
+
+    <section class="clock-section">
+      <h2>Live Clock</h2>
+      <p id="clock">00:00:00</p>
+    </section>
+
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter task" />
+      <button id="addTodo">Add</button>
+
+      <ul id="todoList">
+        hello world
+      </ul>
+
+    </section>
+
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <section class="quote-section">
+      <h2>Random Quote</h2>
+      <blockquote id="quote">Click below to get inspired!</blockquote>
+      <button id="loadQuote">Load Quote</button>
+    </section>
+
+    <button id="openModal">Open Modal</button>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <p>This is a sample modal popup using JavaScript.</p>
+    </div>
+  </div>
+
+  <script src="js/practice2.js"></script>
+</body>
+</html>

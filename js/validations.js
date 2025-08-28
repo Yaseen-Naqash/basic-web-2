@@ -3,6 +3,7 @@ let phone = document.getElementById('phone')
 let username = document.getElementById('username')
 let errorBox = document.getElementById('error')
 
+
 myform.addEventListener('submit',function name(e) {
     e.preventDefault()
 
